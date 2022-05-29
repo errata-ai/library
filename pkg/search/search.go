@@ -3,7 +3,7 @@ package search
 import (
 	"github.com/blevesearch/bleve/v2"
 	"github.com/blevesearch/bleve/v2/search"
-	"github.com/errata-ai/library/internal/data"
+	"github.com/errata-ai/library/pkg/data"
 )
 
 // Engine implements our local search engine interface.

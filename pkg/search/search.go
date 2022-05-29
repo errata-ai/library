@@ -140,7 +140,9 @@ func NewEngineFromData(name string, data data.Set) (*Engine, error) {
 
 // LoadEngine loads an engine from disk.
 func LoadEngine(name string) (*Engine, error) {
-	index, err := bleve.Open(name)
+	index, err := bleve.OpenUsing(name, map[string]interface{}{
+		"read_only": true,
+	})
 	if err != nil {
 		return &Engine{}, err
 	}

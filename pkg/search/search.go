@@ -112,8 +112,8 @@ func NewEngine(name string, keys map[string]string) (*Engine, error) {
 	if err != nil {
 		return &engine, err
 	}
-
 	engine.Index = index
+
 	count, err := index.DocCount()
 	if err != nil {
 		return &engine, err
@@ -140,9 +140,7 @@ func NewEngineFromData(name string, data data.Set) (*Engine, error) {
 
 // LoadEngine loads an engine from disk.
 func LoadEngine(name string) (*Engine, error) {
-	index, err := bleve.OpenUsing(name, map[string]interface{}{
-		"read_only": true,
-	})
+	index, err := bleve.OpenUsing(name, map[string]interface{}{"read_only": true})
 	if err != nil {
 		return &Engine{}, err
 	}

@@ -72,6 +72,8 @@ func GetDocMapping(keys map[string]string) (*mapping.DocumentMapping, error) {
 				custom.AddFieldMappingsAt(k, dateFieldMapping)
 			case "numeric":
 				custom.AddFieldMappingsAt(k, numFieldMapping)
+			case "keywords":
+				custom.AddFieldMappingsAt(k, keywordFieldMapping)
 			default:
 				// NOTE: Should we go with "simple" in hopes of keeping
 				// lang-agnostic ...

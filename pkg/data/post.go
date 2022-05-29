@@ -2,11 +2,9 @@ package data
 
 import (
 	"fmt"
+	goose "github.com/advancedlogic/GoOse"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
-	"strconv"
-
-	goose "github.com/advancedlogic/GoOse"
 )
 
 type Entry struct {
@@ -26,8 +24,14 @@ func FromLinkList(path string) (Set, error) {
 		return input, err
 	}
 	input.Mapping = Mapping{
-		Path:   path,
-		Fields: map[string]string{"title": "string", "text": "string", "author": "string"},
+		Path: path,
+		Fields: map[string]string{
+			"title":  "string",
+			"text":   "string",
+			"author": "string",
+			"date":   "datetime",
+			"tags":   "keywords",
+		},
 	}
 
 	sources, err := readEntries(entries)
@@ -59,25 +63,22 @@ func readEntries(entries []Entry) ([]Source, error) {
 	var sources []Source
 
 	for _, entry := range entries {
-
 		article, err := postReader.ExtractFromURL(entry.URL)
 		if err != nil {
 			fmt.Println("Failed", entry.Title)
 			return sources, err
 		}
 
-		_id, err := hash(article.Title)
-		if err != nil {
-			return sources, err
-		}
-
+		_id := fmt.Sprintf("TITLE=%s&URL=%s", article.Title, article.FinalURL)
 		sources = append(sources, Source{
-			ID:  strconv.Itoa(int(_id)),
+			ID:  _id,
 			URL: article.FinalURL,
 			Fields: map[string]interface{}{
 				"title":  article.Title,
 				"text":   article.CleanedText,
 				"author": entry.Author,
+				"date":   article.PublishDate,
+				"tags":   article.Tags,
 			},
 		})
 	}

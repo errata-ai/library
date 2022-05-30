@@ -5,6 +5,7 @@ import (
 	goose "github.com/advancedlogic/GoOse"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
+	"time"
 )
 
 type Entry struct {
@@ -29,7 +30,7 @@ func FromLinkList(path string) (Set, error) {
 			"title":  "string",
 			"text":   "string",
 			"author": "string",
-			"date":   "datetime",
+			"date":   "numeric",
 			"tags":   "keywords",
 		},
 	}
@@ -69,9 +70,14 @@ func readEntries(entries []Entry) ([]Source, error) {
 			return sources, err
 		}
 
+		year, _, _ := time.Now().Date()
+		if article.PublishDate != nil {
+			year, _, _ = article.PublishDate.Date()
+		}
+
 		_id := fmt.Sprintf(
 			"title=%s&url=%s&author=%s&year=%s",
-			article.Title, article.FinalURL, entry.Author, article.PublishDate.Year())
+			article.Title, article.FinalURL, entry.Author, year)
 
 		sources = append(sources, Source{
 			ID:  _id,
@@ -80,7 +86,7 @@ func readEntries(entries []Entry) ([]Source, error) {
 				"title":  article.Title,
 				"text":   article.CleanedText,
 				"author": entry.Author,
-				"date":   article.PublishDate,
+				"year":   year,
 				"tags":   article.Tags,
 			},
 		})

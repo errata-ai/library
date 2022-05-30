@@ -76,7 +76,7 @@ func readEntries(entries []Entry) ([]Source, error) {
 		}
 
 		_id := fmt.Sprintf(
-			"title=%s&url=%s&author=%s&year=%s",
+			"title=%s&url=%s&author=%s&year=%d",
 			article.Title, article.FinalURL, entry.Author, year)
 
 		sources = append(sources, Source{

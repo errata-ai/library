@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -15,12 +16,17 @@ import (
 )
 
 func printJSON(t interface{}) error {
-	b, err := json.MarshalIndent(t, "", "  ")
+	bf := bytes.NewBuffer([]byte{})
+
+	jsonEncoder := json.NewEncoder(bf)
+	jsonEncoder.SetEscapeHTML(false)
+
+	err := jsonEncoder.Encode(t)
 	if err != nil {
-		fmt.Println("{}")
-		return err
+		panic(err)
 	}
-	fmt.Println(string(b))
+
+	fmt.Println(bf.String())
 	return nil
 }
 

@@ -1,19 +1,11 @@
 package data
 
 import (
+	"encoding/json"
 	"fmt"
 	goose "github.com/advancedlogic/GoOse"
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
-	"time"
 )
-
-type Entry struct {
-	Title  string
-	URL    string
-	Year   int
-	Author string
-}
 
 var postReader = goose.New()
 
@@ -31,7 +23,7 @@ func FromLinkList(path string) (Set, error) {
 			"text":   "string",
 			"author": "string",
 			"date":   "numeric",
-			"tags":   "keywords",
+			"type":   "string",
 		},
 	}
 
@@ -52,7 +44,7 @@ func getEntries(key string) ([]Entry, error) {
 		return nil, err
 	}
 
-	err = yaml.Unmarshal(src, &entries)
+	err = json.Unmarshal(src, &entries)
 	if err != nil {
 		return nil, err
 	}
@@ -64,30 +56,29 @@ func readEntries(entries []Entry) ([]Source, error) {
 	var sources []Source
 
 	for _, entry := range entries {
-		article, err := postReader.ExtractFromURL(entry.URL)
-		if err != nil {
-			fmt.Println("Failed", entry.Title)
-			return sources, err
-		}
-
-		year, _, _ := time.Now().Date()
-		if article.PublishDate != nil {
-			year, _, _ = article.PublishDate.Date()
+		body := entry.Title
+		if entry.Type == "post" {
+			article, err := postReader.ExtractFromURL(entry.URL)
+			if err != nil {
+				fmt.Println("Failed", entry.Title)
+				return sources, err
+			}
+			body = article.CleanedText
 		}
 
 		_id := fmt.Sprintf(
 			"title=%s&url=%s&author=%s&year=%d",
-			article.Title, article.FinalURL, entry.Author, year)
+			entry.Title, entry.URL, entry.Author, entry.Year)
 
 		sources = append(sources, Source{
 			ID:  _id,
-			URL: article.FinalURL,
+			URL: entry.URL,
 			Fields: map[string]interface{}{
-				"title":  article.Title,
-				"text":   article.CleanedText,
+				"title":  entry.Title,
+				"text":   body,
 				"author": entry.Author,
-				"year":   year,
-				"tags":   article.Tags,
+				"year":   entry.Year,
+				"type":   entry.Type,
 			},
 		})
 	}

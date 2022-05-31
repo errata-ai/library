@@ -14,6 +14,14 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
+type Entry struct {
+	Title  string
+	URL    string
+	Year   int
+	Author string
+	Type   string
+}
+
 type Mapping struct {
 	Path      string
 	Template  string            // TextFSM, LOIS, etc.

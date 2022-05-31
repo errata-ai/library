@@ -1,5 +1,12 @@
 [
   {
+    "title": "Introducing “Packages”",
+    "url": "https://medium.com/valelint/introducing-packages-1a079ed712f7",
+    "author": "jdkato",
+    "year": 2022,
+    "type": "post"
+  },
+  {
     "title": "Writing like a pro with vale & neovim",
     "url": "https://bhupesh.me/writing-like-a-pro-with-vale-and-neovim/",
     "author": "Bhupesh Varshney",
@@ -70,6 +77,13 @@
     "type": "post"
   },
   {
+    "title": "Taking Vale Server to the web",
+    "url": "https://medium.com/valelint/taking-vale-server-to-the-web-4de44b32e547",
+    "year": 2020,
+    "author": "jdkato",
+    "type": "post"
+  },
+  {
     "title": "Prose linting with Vale and Emacs",
     "url": "https://duncan.codes/posts/2020-09-14-prose-linting-vale-emacs.org/index.html",
     "year": 2020,
@@ -96,6 +110,13 @@
     "author": "Pronovix",
     "year": 2020,
     "type": "video"
+  },
+  {
+    "title": "Vale & The OpenAPI Specification",
+    "url": "https://medium.com/valelint/vale-the-openapi-specification-8a7cfae135fb",
+    "year": 2019,
+    "author": "jdkato",
+    "type": "post"
   },
   {
     "title": "Sofie's Docs Diary Vol. 16: Writing in style",

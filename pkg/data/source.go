@@ -55,7 +55,7 @@ func GetDocMapping(keys map[string]string) (*mapping.DocumentMapping, error) {
 	keywordFieldMapping.Analyzer = keyword.Name
 
 	simpleFieldMapping := bleve.NewTextFieldMapping()
-	simpleFieldMapping.Store = false
+	simpleFieldMapping.Store = true
 	simpleFieldMapping.Analyzer = simple.Name
 
 	englishTextFieldMapping := bleve.NewTextFieldMapping()

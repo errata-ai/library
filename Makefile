@@ -1,3 +1,5 @@
+.PHONY: build search bin
+
 all: build
 
 build:
@@ -16,3 +18,6 @@ search:
 	go build -ldflags="-s -w" -o bin/engine cmd/engine/main.go
 	./bin/engine read library.json bin/INDEX
 	./bin/engine search ./bin/INDEX 'type:video'
+
+bin:
+	go build -ldflags="-s -w" -o bin/engine cmd/engine/main.go

@@ -20,6 +20,7 @@ type Entry struct {
 	Year   int
 	Author string
 	Type   string
+	Body   string
 }
 
 type Mapping struct {

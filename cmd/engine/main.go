@@ -36,6 +36,16 @@ func main() {
 		Usage: "A local, offline search engine",
 		Commands: []*cli.Command{
 			{
+				Name: "questions",
+				Action: func(c *cli.Context) error {
+					src, err := data.FromGHIssues([]string{c.Args().First()})
+					if err != nil {
+						return err
+					}
+					return printJSON(src)
+				},
+			},
+			{
 				Name: "read",
 				Action: func(c *cli.Context) error {
 					args := c.Args().Slice()
@@ -47,6 +57,12 @@ func main() {
 					if err != nil {
 						return err
 					}
+
+					issues, err := data.FromGHIssues([]string{"vale"})
+					if err != nil {
+						return err
+					}
+					src.Sources = append(src.Sources, issues.Sources...)
 
 					_, err = search.NewEngineFromData(args[1], src)
 					if err != nil {

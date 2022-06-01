@@ -9,12 +9,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
+        env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: make
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
-        env:
-            GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           files: |
             INDEX.zip

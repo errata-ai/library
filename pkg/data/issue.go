@@ -102,7 +102,7 @@ func getQuestions(repos []string) ([]Repo, error) {
 			for _, issue := range issues {
 				year, _, _ := issue.CreatedAt.Date()
 				ent := Entry{
-					Title: *issue.Title,
+					Title: stripmd.Strip(*issue.Title),
 					URL:   *issue.HTMLURL,
 					Type:  "issue",
 					Year:  year,

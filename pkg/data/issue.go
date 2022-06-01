@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/google/go-github/v45/github"
+	stripmd "github.com/writeas/go-strip-markdown"
 	"golang.org/x/oauth2"
 )
 
@@ -110,7 +111,7 @@ func getQuestions(repos []string) ([]Repo, error) {
 					ent.Author = *issue.GetUser().Login
 				}
 				if issue.Body != nil {
-					ent.Body = *issue.Body
+					ent.Body = stripmd.Strip(*issue.Body)
 				}
 				repo.Issues = append(repo.Issues, ent)
 			}

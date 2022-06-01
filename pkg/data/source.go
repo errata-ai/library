@@ -88,7 +88,7 @@ func GetDocMapping(keys map[string]string) (*mapping.DocumentMapping, error) {
 				// lang-agnostic ...
 				//
 				// en is smaller/faster ...
-				custom.AddFieldMappingsAt(k, englishTextFieldMapping)
+				custom.AddFieldMappingsAt(k, simpleFieldMapping)
 			}
 		}
 	}

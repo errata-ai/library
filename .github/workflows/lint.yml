@@ -1,0 +1,22 @@
+name: Linting
+on: push
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build
+      run: ls -a && ls -a .github
+
+    - name: Vale
+      uses: errata-ai/vale-action@reviewdog
+      with:
+        fail_on_error: true
+        reporter: github-check
+        files: README.md
+        vale_flags: "--config=.github/.vale.ini"
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

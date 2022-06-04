@@ -1,5 +1,12 @@
 [
   {
+    "title": "Integrate vale into an open source project",
+    "url": "https://blog.spinthemoose.com/2022/06/03/integrate-vale-into-an-open-source-project/",
+    "author": "David Alpert",
+    "year": 2022,
+    "type": "post"
+  },
+  {
     "title": "Introducing “Packages”",
     "url": "https://medium.com/valelint/introducing-packages-1a079ed712f7",
     "author": "jdkato",

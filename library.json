@@ -1,5 +1,19 @@
 [
   {
+    "title": "Using Vale to help engineers become better writers",
+    "url": "https://engineering.contentsquare.com/2023/using-vale-to-help-engineers-become-better-writers/",
+    "author": "François Violette | Contentsquare",
+    "year": 2023,
+    "type": "post"
+  },
+  {
+    "title": "Prose linting with Vale",
+    "url": "https://blog.meilisearch.com/prose-linting-with-vale/",
+    "author": "MARYAM SULEMANI | Meilisearch",
+    "year": 2023,
+    "type": "post"
+  },
+  {
     "title": "Introducing “Packages”",
     "url": "https://medium.com/valelint/introducing-packages-1a079ed712f7",
     "author": "jdkato",

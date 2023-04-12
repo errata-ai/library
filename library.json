@@ -1,5 +1,12 @@
 [
   {
+    "title": "Linting Documentation with Vale to Increase Quality & Consistency - includes setup steps for Xcode",
+    "url": "https://getstream.io/blog/linting-documentation-with-vale/#setting-vale-up-in-ci",
+    "author": "Jeroen Leenarts | Stream",
+    "year": 2023,
+    "type": "post"
+  },
+  {
     "title": "Using Vale to help engineers become better writers",
     "url": "https://engineering.contentsquare.com/2023/using-vale-to-help-engineers-become-better-writers/",
     "author": "François Violette | Contentsquare",

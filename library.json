@@ -1,5 +1,12 @@
 [
   {
+    "title": "New custom automated style workflow",
+    "url": "https://opensearch.org/blog/style-workflow/",
+    "author": "Nathan Bower, Fanit Kolchina | OpenSearch",
+    "year": 2023,
+    "type": "post"
+  },
+  {
     "title": "Linting Documentation with Vale to Increase Quality & Consistency - includes setup steps for Xcode",
     "url": "https://getstream.io/blog/linting-documentation-with-vale/#setting-vale-up-in-ci",
     "author": "Jeroen Leenarts | Stream",

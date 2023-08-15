@@ -3,11 +3,12 @@ package data
 import (
 	"encoding/json"
 	"fmt"
-	goose "github.com/advancedlogic/GoOse"
-	"io/ioutil"
-)
+	"io"
+	"net/http"
+	"os"
 
-var postReader = goose.New()
+	"github.com/k3a/html2text"
+)
 
 func FromLinkList(path string) (Set, error) {
 	var input Set
@@ -39,7 +40,7 @@ func FromLinkList(path string) (Set, error) {
 func getEntries(key string) ([]Entry, error) {
 	var entries []Entry
 
-	src, err := ioutil.ReadFile(key)
+	src, err := os.ReadFile(key)
 	if err != nil {
 		return nil, err
 	}
@@ -58,12 +59,18 @@ func readEntries(entries []Entry) ([]Source, error) {
 	for _, entry := range entries {
 		body := entry.Title
 		if entry.Type == "post" {
-			article, err := postReader.ExtractFromURL(entry.URL)
+			response, err := http.Get(entry.URL)
 			if err != nil {
-				fmt.Println("Failed", entry.Title)
+				fmt.Println("Failed", entry.Title, err)
 				return sources, err
 			}
-			body = article.CleanedText
+			defer response.Body.Close()
+
+			bytes, err := io.ReadAll(response.Body)
+			if err != nil {
+				return sources, err
+			}
+			body = html2text.HTML2Text(string(bytes))
 		}
 
 		_id := fmt.Sprintf(

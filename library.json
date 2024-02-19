@@ -98,13 +98,6 @@
     "type": "post"
   },
   {
-    "title": "Prose linting with Vale and Emacs",
-    "url": "https://duncan.codes/posts/2020-09-14-prose-linting-vale-emacs.org/index.html",
-    "year": 2020,
-    "author": "Duncan Mac-Vicar P.",
-    "type": "post"
-  },
-  {
     "title": "Linting the Buildkite Docs",
     "url": "https://buildkite.com/blog/linting-the-buildkite-docs",
     "year": 2020,

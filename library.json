@@ -1,5 +1,12 @@
 [
   {
+    "title": "How We Use Vale to Improve Our Documentation Editing Process",
+    "url": "https://www.datadoghq.com/blog/engineering/how-we-use-vale-to-improve-our-documentation-editing-process/",
+    "author": "Datadog",
+    "year": 2024,
+    "type": "post"
+  },
+  {
     "title": "Using Vale to help engineers become better writers",
     "url": "https://engineering.contentsquare.com/2023/using-vale-to-help-engineers-become-better-writers/",
     "author": "François Violette | Contentsquare",

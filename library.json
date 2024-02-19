@@ -91,13 +91,6 @@
     "type": "video"
   },
   {
-    "title": "Testing docs with Vale - Part 1: Installing the Vale CLI",
-    "url": "https://www.deanna.dev/posts/installing-vale-cli/",
-    "year": 2020,
-    "author": "Deanna Thompson",
-    "type": "post"
-  },
-  {
     "title": "Taking Vale Server to the web",
     "url": "https://medium.com/valelint/taking-vale-server-to-the-web-4de44b32e547",
     "year": 2020,

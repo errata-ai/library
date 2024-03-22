@@ -1,5 +1,12 @@
 [
   {
+    "title": "How to create a Vale linter custom rule: Manually vs. AI-prompting approach",
+    "url": "https://medium.com/@meetdianacheung/how-to-create-a-vale-linter-custom-rule-031aa00e4100",
+    "author": "Diana Cheung",
+    "year": 2024,
+    "type": "post"
+  },
+  {
     "title": "How We Use Vale to Improve Our Documentation Editing Process",
     "url": "https://www.datadoghq.com/blog/engineering/how-we-use-vale-to-improve-our-documentation-editing-process/",
     "author": "Datadog",

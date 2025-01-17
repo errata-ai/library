@@ -1,184 +1,191 @@
 [
-  {
-    "title": "How to create a Vale linter custom rule: Manually vs. AI-prompting approach",
-    "url": "https://medium.com/@meetdianacheung/how-to-create-a-vale-linter-custom-rule-031aa00e4100",
-    "author": "Diana Cheung",
-    "year": 2024,
-    "type": "post"
-  },
-  {
-    "title": "How We Use Vale to Improve Our Documentation Editing Process",
-    "url": "https://www.datadoghq.com/blog/engineering/how-we-use-vale-to-improve-our-documentation-editing-process/",
-    "author": "Datadog",
-    "year": 2024,
-    "type": "post"
-  },
-  {
-    "title": "Linting Documentation with Vale to Increase Quality & Consistency - includes setup steps for Xcode",
-    "url": "https://getstream.io/blog/linting-documentation-with-vale/#setting-vale-up-in-ci",
-    "author": "Jeroen Leenarts | Stream",
-    "year": 2023,
-    "type": "post"
-  },
-  {
-    "title": "Using Vale to help engineers become better writers",
-    "url": "https://engineering.contentsquare.com/2023/using-vale-to-help-engineers-become-better-writers/",
-    "author": "François Violette | Contentsquare",
-    "year": 2023,
-    "type": "post"
-  },
-  {
-    "title": "Prose linting with Vale",
-    "url": "https://blog.meilisearch.com/prose-linting-with-vale/",
-    "author": "MARYAM SULEMANI | Meilisearch",
-    "year": 2023,
-    "type": "post"
-  },
-  {
-    "title": "Introducing “Packages”",
-    "url": "https://medium.com/valelint/introducing-packages-1a079ed712f7",
-    "author": "jdkato",
-    "year": 2022,
-    "type": "post"
-  },
-  {
-    "title": "Writing like a pro with vale & neovim",
-    "url": "https://bhupesh.me/writing-like-a-pro-with-vale-and-neovim/",
-    "author": "Bhupesh Varshney",
-    "year": 2022,
-    "type": "post"
-  },
-  {
-    "title": "What’s the difference between Vale Server and Vale CLI?",
-    "url": "https://rolfe.blog/2022/04/10/whats-the-difference-between-vale-server-and-vale-cli/",
-    "author": "Rolfe Dlugy-Hegwer",
-    "year": 2022,
-    "type": "post"
-  },
-  {
-    "title": "Reducing negative and biased language in documentation",
-    "url": "https://www.cncf.io/blog/2022/03/09/reducing-negative-and-biased-language-in-documentation/",
-    "year": 2022,
-    "author": "Chris Ward",
-    "type": "post"
-  },
-  {
-    "title": "Automate Style Checks with Jetbrains",
-    "url": "https://www.linkedin.com/pulse/automate-style-checks-tara-english-sweeney?trk=articles_directory",
-    "year": 2022,
-    "author": "Tara English-Sweeney",
-    "type": "post"
-  },
-  {
-    "title": "How To Automate Documentation Workflow For Developers",
-    "url": "https://www.smashingmagazine.com/2021/08/automate-documentation-workflow-for-developers/",
-    "year": 2021,
-    "author": "Portia Burton",
-    "type": "post"
-  },
-  {
-    "title": "First steps with the Vale prose linter",
-    "url": "https://passo.uno/posts/first-steps-with-the-vale-prose-linter/",
-    "year": 2021,
-    "author": "Fabrizio Ferri Benedetti",
-    "type": "post"
-  },
-  {
-    "title": "Writing Articles with Vale",
-    "url": "https://www.thedroneely.com/posts/writing-with-vale/",
-    "year": 2021,
-    "author": "Thedro Neely",
-    "type": "post"
-  },
-  {
-    "title": "Linting your content using Vale",
-    "url": "https://www.shwetashetye.com/blog/vale/",
-    "year": 2021,
-    "author": "Shweta Shetye",
-    "type": "post"
-  },
-  {
-    "title": "Reducing Negative and Biased Language in Documentation",
-    "url": "https://www.youtube.com/watch?v=1aw6oRaFWYs",
-    "author": "All Things Open",
-    "year": 2021,
-    "type": "video"
-  },
-  {
-    "title": "Taking Vale Server to the web",
-    "url": "https://medium.com/valelint/taking-vale-server-to-the-web-4de44b32e547",
-    "year": 2020,
-    "author": "jdkato",
-    "type": "post"
-  },
-  {
-    "title": "Linting the Buildkite Docs",
-    "url": "https://buildkite.com/blog/linting-the-buildkite-docs",
-    "year": 2020,
-    "author": "Sam Wright, Buildkite",
-    "type": "post"
-  },
-  {
-    "title": "Documentation as code (Part 3): A Linting How To - The Vale Linter in Action",
-    "url": "https://www.youtube.com/watch?v=p1pfwpMv2wU",
-    "author": "Tag1",
-    "year": 2020,
-    "type": "video"
-  },
-  {
-    "title": "Docs-as-Code Workflow for your (API) Developer Portal",
-    "url": "https://www.youtube.com/watch?v=ISwEsOx8d7k",
-    "author": "Pronovix",
-    "year": 2020,
-    "type": "video"
-  },
-  {
-    "title": "Vale & The OpenAPI Specification",
-    "url": "https://medium.com/valelint/vale-the-openapi-specification-8a7cfae135fb",
-    "year": 2019,
-    "author": "jdkato",
-    "type": "post"
-  },
-  {
-    "title": "Sofie's Docs Diary Vol. 16: Writing in style",
-    "url": "https://umbraco.com/blog/sofies-docs-diary-vol-16-writing-in-style/",
-    "year": 2019,
-    "author": "Sofie Toft Kristensen, Umbraco",
-    "type": "post"
-  },
-  {
-    "title": "Linting my prose with Vale",
-    "url": "https://blog.probablyfine.co.uk/2019/11/16/linting-my-prose-with-vale.html",
-    "year": 2019,
-    "author": "Alex Wilson",
-    "type": "post"
-  },
-  {
-    "title": "Automated Enforcement of our Style Guide",
-    "url": "https://drupalize.me/blog/201910/automated-enforcement-our-style-guide",
-    "year": 2019,
-    "author": "Joe Shindelar, Drupalize.Me",
-    "type": "post"
-  },
-  {
-    "title": "Testing your Documentation",
-    "url": "https://www.writethedocs.org/guide/tools/testing/#vale",
-    "year": 2019,
-    "author": "Write the Docs",
-    "type": "post"
-  },
-  {
-    "title": "Day 1 Lightning Talk #3 - Write the Docs Prague 2019",
-    "url": "https://youtu.be/sWaHa_wQv3M",
-    "author": "Write the Docs",
-    "year": 2019,
-    "type": "video"
-  },
-  {
-    "title": "Vale for Spelling, Grammar, Style and Readability Linting",
-    "url": "https://dzone.com/articles/vale-for-spelling-grammar-style-and-readability-li",
-    "year": 2018,
-    "author": "Chris Ward",
-    "type": "post"
-  }
+    {
+        "title": "How we use Vale to enforce better writing in docs and beyond",
+        "url": "https://www.spectrocloud.com/blog/how-we-use-vale-to-enforce-better-writing-in-docs-and-beyond",
+        "author": "Karl Cardenas | Spectro Cloud",
+        "year": 2025,
+        "type": "post"
+    },
+    {
+        "title": "How to create a Vale linter custom rule: Manually vs. AI-prompting approach",
+        "url": "https://medium.com/@meetdianacheung/how-to-create-a-vale-linter-custom-rule-031aa00e4100",
+        "author": "Diana Cheung",
+        "year": 2024,
+        "type": "post"
+    },
+    {
+        "title": "How We Use Vale to Improve Our Documentation Editing Process",
+        "url": "https://www.datadoghq.com/blog/engineering/how-we-use-vale-to-improve-our-documentation-editing-process/",
+        "author": "Datadog",
+        "year": 2024,
+        "type": "post"
+    },
+    {
+        "title": "Linting Documentation with Vale to Increase Quality & Consistency - includes setup steps for Xcode",
+        "url": "https://getstream.io/blog/linting-documentation-with-vale/#setting-vale-up-in-ci",
+        "author": "Jeroen Leenarts | Stream",
+        "year": 2023,
+        "type": "post"
+    },
+    {
+        "title": "Using Vale to help engineers become better writers",
+        "url": "https://engineering.contentsquare.com/2023/using-vale-to-help-engineers-become-better-writers/",
+        "author": "François Violette | Contentsquare",
+        "year": 2023,
+        "type": "post"
+    },
+    {
+        "title": "Prose linting with Vale",
+        "url": "https://blog.meilisearch.com/prose-linting-with-vale/",
+        "author": "MARYAM SULEMANI | Meilisearch",
+        "year": 2023,
+        "type": "post"
+    },
+    {
+        "title": "Introducing “Packages”",
+        "url": "https://medium.com/valelint/introducing-packages-1a079ed712f7",
+        "author": "jdkato",
+        "year": 2022,
+        "type": "post"
+    },
+    {
+        "title": "Writing like a pro with vale & neovim",
+        "url": "https://bhupesh.me/writing-like-a-pro-with-vale-and-neovim/",
+        "author": "Bhupesh Varshney",
+        "year": 2022,
+        "type": "post"
+    },
+    {
+        "title": "What’s the difference between Vale Server and Vale CLI?",
+        "url": "https://rolfe.blog/2022/04/10/whats-the-difference-between-vale-server-and-vale-cli/",
+        "author": "Rolfe Dlugy-Hegwer",
+        "year": 2022,
+        "type": "post"
+    },
+    {
+        "title": "Reducing negative and biased language in documentation",
+        "url": "https://www.cncf.io/blog/2022/03/09/reducing-negative-and-biased-language-in-documentation/",
+        "year": 2022,
+        "author": "Chris Ward",
+        "type": "post"
+    },
+    {
+        "title": "Automate Style Checks with Jetbrains",
+        "url": "https://www.linkedin.com/pulse/automate-style-checks-tara-english-sweeney?trk=articles_directory",
+        "year": 2022,
+        "author": "Tara English-Sweeney",
+        "type": "post"
+    },
+    {
+        "title": "How To Automate Documentation Workflow For Developers",
+        "url": "https://www.smashingmagazine.com/2021/08/automate-documentation-workflow-for-developers/",
+        "year": 2021,
+        "author": "Portia Burton",
+        "type": "post"
+    },
+    {
+        "title": "First steps with the Vale prose linter",
+        "url": "https://passo.uno/posts/first-steps-with-the-vale-prose-linter/",
+        "year": 2021,
+        "author": "Fabrizio Ferri Benedetti",
+        "type": "post"
+    },
+    {
+        "title": "Writing Articles with Vale",
+        "url": "https://www.thedroneely.com/posts/writing-with-vale/",
+        "year": 2021,
+        "author": "Thedro Neely",
+        "type": "post"
+    },
+    {
+        "title": "Linting your content using Vale",
+        "url": "https://www.shwetashetye.com/blog/vale/",
+        "year": 2021,
+        "author": "Shweta Shetye",
+        "type": "post"
+    },
+    {
+        "title": "Reducing Negative and Biased Language in Documentation",
+        "url": "https://www.youtube.com/watch?v=1aw6oRaFWYs",
+        "author": "All Things Open",
+        "year": 2021,
+        "type": "video"
+    },
+    {
+        "title": "Taking Vale Server to the web",
+        "url": "https://medium.com/valelint/taking-vale-server-to-the-web-4de44b32e547",
+        "year": 2020,
+        "author": "jdkato",
+        "type": "post"
+    },
+    {
+        "title": "Linting the Buildkite Docs",
+        "url": "https://buildkite.com/blog/linting-the-buildkite-docs",
+        "year": 2020,
+        "author": "Sam Wright, Buildkite",
+        "type": "post"
+    },
+    {
+        "title": "Documentation as code (Part 3): A Linting How To - The Vale Linter in Action",
+        "url": "https://www.youtube.com/watch?v=p1pfwpMv2wU",
+        "author": "Tag1",
+        "year": 2020,
+        "type": "video"
+    },
+    {
+        "title": "Docs-as-Code Workflow for your (API) Developer Portal",
+        "url": "https://www.youtube.com/watch?v=ISwEsOx8d7k",
+        "author": "Pronovix",
+        "year": 2020,
+        "type": "video"
+    },
+    {
+        "title": "Vale & The OpenAPI Specification",
+        "url": "https://medium.com/valelint/vale-the-openapi-specification-8a7cfae135fb",
+        "year": 2019,
+        "author": "jdkato",
+        "type": "post"
+    },
+    {
+        "title": "Sofie's Docs Diary Vol. 16: Writing in style",
+        "url": "https://umbraco.com/blog/sofies-docs-diary-vol-16-writing-in-style/",
+        "year": 2019,
+        "author": "Sofie Toft Kristensen, Umbraco",
+        "type": "post"
+    },
+    {
+        "title": "Linting my prose with Vale",
+        "url": "https://blog.probablyfine.co.uk/2019/11/16/linting-my-prose-with-vale.html",
+        "year": 2019,
+        "author": "Alex Wilson",
+        "type": "post"
+    },
+    {
+        "title": "Automated Enforcement of our Style Guide",
+        "url": "https://drupalize.me/blog/201910/automated-enforcement-our-style-guide",
+        "year": 2019,
+        "author": "Joe Shindelar, Drupalize.Me",
+        "type": "post"
+    },
+    {
+        "title": "Testing your Documentation",
+        "url": "https://www.writethedocs.org/guide/tools/testing/#vale",
+        "year": 2019,
+        "author": "Write the Docs",
+        "type": "post"
+    },
+    {
+        "title": "Day 1 Lightning Talk #3 - Write the Docs Prague 2019",
+        "url": "https://youtu.be/sWaHa_wQv3M",
+        "author": "Write the Docs",
+        "year": 2019,
+        "type": "video"
+    },
+    {
+        "title": "Vale for Spelling, Grammar, Style and Readability Linting",
+        "url": "https://dzone.com/articles/vale-for-spelling-grammar-style-and-readability-li",
+        "year": 2018,
+        "author": "Chris Ward",
+        "type": "post"
+    }
 ]
